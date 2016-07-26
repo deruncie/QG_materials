@@ -13,7 +13,7 @@ plot_fun = function(d,q) {
   alpha = a + d*(q-p)
   mean = a*(p-q) + 2*d*p*q
   plot(NA,NA,xlim = c(-0.5,2.5),ylim = c(-a,a)*1.5,xlab = '# A1',ylab = 'genetic value')
-  symbols(c(0,1,2),y=c(-1,d,1),circles = sqrt(area*c(q^2,2*p*q,p^2)/pi),add=T,inches=F)
+  symbols(c(0,1,2),y=c(-1,d,1),circles = sqrt(area*c(q^2,2*p*q,p^2)/pi),add=T,inches=F,bg = 'grey70')
   abline(mean-2*p*alpha,alpha)
   text(1,d - 0.5*c(1,-1)[(d<0)+1],sprintf('alpha = %0.2f',alpha))
 }
