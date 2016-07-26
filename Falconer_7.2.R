@@ -1,4 +1,5 @@
-library(QuickShinyApp)
+if(!require(QuickShinyApp)) devtools::install_github('deruncie/QuickShiny')
+
 
 slider_params = list(
   d = c(0,-1.5,1.5),
